@@ -1,0 +1,28 @@
+@import "flake/colors-list";
+
+$font-families: (
+  serif: "Lora",
+  titles: "Spectral SC"
+);
+
+$title-sizes: (
+  h1: 3.1em,
+  h2: 2.25em,
+  h3: 1.75em
+);
+
+$font-sizes: (
+  small: .85em,
+  normal: 18px,
+  large: 1.15em
+);
+
+$full-colors: false;
+$theme-colors: (
+  primary: #87d7f6,
+  secondary: darken(#87d7f6, 20%),
+  light: #f0edf2,
+  dark: map-get(map-get($colors-list, gray), 700),
+  white: #fff,
+  black: #000
+);

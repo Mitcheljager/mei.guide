@@ -1,0 +1,46 @@
+body {
+  @include apply((m-0, py-5, px-4, text-dark, bg-white));
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: "Lora", serif;
+
+  @include breakpoint(md) {
+    @include apply(text-normal);
+  }
+}
+
+a {
+  @include apply((text-dark, bb-2, b-dark, text-none, font-bold));
+
+  &:hover {
+    @include apply((text-primary, b-primary));
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.25em;
+  font-family: "Spectral SC";
+}
+
+.text-large {
+  line-height: 1.5em;
+}
+
+.overflowing-columns {
+  width: 100%;
+
+  div,
+  img {
+    &:first-child {
+      width: calc(50vw - #{(spacing(4) * 2)});
+    }
+
+    &:last-child {
+      width: calc(#{map-get($breakpoints, mw) / 2} / 2 + #{spacing(4) * 2});
+    }
+  }
+}
