@@ -18,6 +18,8 @@ gem "high_voltage", "~> 3.0.0"
 
 gem "flake-scss"
 
+gem "brainblocks-rails", path: "../brainblocks-rails"
+
 group :development, :test do
 
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
