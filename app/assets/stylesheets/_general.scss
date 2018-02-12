@@ -1,8 +1,9 @@
 body {
-  @include apply((m-0, py-5, px-4, text-dark, bg-white));
+  @include apply((my-0, mx-auto, py-5, px-4, text-dark, bg-white));
   font-size: 16px;
   line-height: 1.5em;
   font-family: "Lora", serif;
+  max-width: 1920px;
 
   @include breakpoint(md) {
     @include apply(text-normal);
@@ -42,5 +43,29 @@ h5 {
     &:last-child {
       width: calc(#{map-get($breakpoints, mw) / 2} / 2 + #{spacing(4) * 2});
     }
+  }
+}
+
+.content-toggle {
+  @include apply((relative, py-1, text-small, text-dark, font-italic, bb-1, b-light));
+  cursor: pointer;
+
+  &__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    -webkit-appearance: none;
+
+    &:checked + .content-toggle__inner {
+      @include apply(block);
+    }
+  }
+
+  &__inner {
+    @include apply(mt-3);
+    display: none;
   }
 }
