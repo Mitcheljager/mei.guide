@@ -47,8 +47,12 @@ h5 {
 }
 
 .content-toggle {
-  @include apply((relative, py-1, text-small, text-dark, font-italic, bb-1, b-light));
+  @include apply((relative, py-1, text-small, text-dark, font-italic, bb-2, b-primary));
   cursor: pointer;
+
+  &:hover {
+    @include apply((b-dark))
+  }
 
   &__input {
     position: absolute;

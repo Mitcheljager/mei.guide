@@ -21,7 +21,6 @@ group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "capybara", "~> 2.13"
   gem "selenium-webdriver"
-  gem "sqlite3"
 end
 
 group :development do
@@ -29,7 +28,6 @@ group :development do
 end
 
 group :production do
-  gem "pg"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
