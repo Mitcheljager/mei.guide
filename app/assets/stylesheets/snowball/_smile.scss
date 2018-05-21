@@ -2,7 +2,6 @@
   &--smile {
     clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 50% 100%);
     transform-origin: center bottom;
-    animation-duration: 3000ms;
 
     &.eye--left {
       animation-name: smile-left-eye;

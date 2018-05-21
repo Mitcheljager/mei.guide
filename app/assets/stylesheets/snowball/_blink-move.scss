@@ -1,6 +1,6 @@
 .eye {
   &--blink-move {
-    animation: blink-move 3000ms;
+    animation-name: blink-move;
     transform-origin: center bottom;
   }
 }

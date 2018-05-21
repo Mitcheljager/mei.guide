@@ -1,6 +1,6 @@
 .eye {
   &--idle {
-    animation: idle 3000ms;
+    animation-name: idle;
     transform-origin: center bottom;
   }
 }

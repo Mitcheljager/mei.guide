@@ -1,6 +1,6 @@
 .eye {
   &--blink-static {
-    animation: blink-static 2000ms;
+    animation-name: blink-static;
     transform-origin: center bottom;
   }
 }
@@ -10,14 +10,19 @@
     border-radius: $eye-radius;
   }
 
-  7% {
+  4% {
     transform: scale(1) translateY(0) translateX(0);
     border-radius: $eye-radius;
   }
 
-  10% {
+  7% {
     transform: scale(1.5, 0.1) translateY(50px);
     border-radius: 50% 50% 10% 10%;
+  }
+
+  12% {
+    transform: scale(1) translateY(0);
+    border-radius: $eye-radius;
   }
 
   15% {
@@ -26,16 +31,11 @@
   }
 
   18% {
-    transform: scale(1) translateY(0);
-    border-radius: $eye-radius;
-  }
-
-  21% {
     transform: scale(1.5, 0.1) translateY(50px);
     border-radius: 50% 50% 10% 10%;
   }
 
-  26% {
+  23% {
     transform: scale(1) translateY(0) translateX(0);
     border-radius: $eye-radius;
   }

@@ -1,6 +1,6 @@
 .eye {
   &--disable {
-    animation: disable 3000ms;
+    animation-name: disable;
     transform-origin: center;
   }
 }
