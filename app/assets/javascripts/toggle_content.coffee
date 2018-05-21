@@ -1,4 +1,9 @@
+prev_handler = window.onload;
+
 window.onload = ->
+  if prev_handler
+       prev_handler()
+
   toggler = document.querySelectorAll "[data-toggle-content]"
 
   document.onclick = (event) ->
