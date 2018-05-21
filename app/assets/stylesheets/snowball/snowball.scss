@@ -45,8 +45,8 @@ html {
   }
 }
 
-@import "blink-move-left",
-        "blink-move-right",
+@import "blink-move",
         "blink-static",
         "smile",
-        "disable";
+        "disable",
+        "idle";
