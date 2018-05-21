@@ -16,7 +16,7 @@ window.onload = ->
   setInterval (->
     unless document.querySelector "[class*='eye--left eye--']"
       currentAnimation = animations[Math.floor(Math.random()*animations.length)]
-      animationDuration = Math.random() * (2500 - 3500) + 3500
+      animationDuration = Math.random() * (2000 - 3000) + 3000
 
     root.style.setProperty "--animation-duration", animationDuration + "ms"
     root.style.setProperty "--rng", (Math.random() * (-1.5 - 1.5) + 1.5).toFixed(3)
