@@ -1,0 +1,44 @@
+.eye {
+  &--idle {
+    animation-name: idle;
+    transform-origin: center bottom;
+  }
+}
+
+@keyframes idle {
+  0% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(0);
+  }
+
+  15% {
+    transform: translateX(calc(10px * var(--rng)));
+  }
+
+  50% {
+    transform: translateX(calc(10px * var(--rng)));
+  }
+
+  55% {
+    transform: translateX(0);
+  }
+
+  70% {
+    transform: translateX(0);
+  }
+
+  75% {
+    transform: translateX(calc(-10px * var(--rng)));
+  }
+
+  90% {
+    transform: translateX(calc(-10px * var(--rng)));
+  }
+
+  95% {
+    transform: translateX(0);
+  }
+}

@@ -1,11 +1,11 @@
 .eye {
-  &--blink-move-right {
-    animation: blink-move-right 3000ms;
+  &--blink-move {
+    animation-name: blink-move;
     transform-origin: center bottom;
   }
 }
 
-@keyframes blink-move-right {
+@keyframes blink-move {
   0% {
     border-radius: $eye-radius;
   }
