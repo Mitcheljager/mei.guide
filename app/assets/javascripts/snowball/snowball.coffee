@@ -8,7 +8,7 @@ window.onload = ->
   leftEye = document.querySelector "[data-eye='left']"
   rightEye = document.querySelector "[data-eye='right']"
 
-  animations = ["blink-move", "blink-static", "smile", "disable", "idle"]
+  animations = ["blink-move", "blink-static", "smile", "disable"]
   # animations = ["disable"]
   currentAnimation = ""
   animationDuration = 3000
