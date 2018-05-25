@@ -6,37 +6,18 @@
 }
 
 @keyframes blink-static {
-  0% {
-    border-radius: $eye-radius;
-  }
-
-  4% {
-    transform: scale(1) translateY(0) translateX(0);
-    border-radius: $eye-radius;
-  }
-
-  7% {
-    transform: scale(1.5, 0.1) translateY(50px);
-    border-radius: 50% 50% 10% 10%;
-  }
-
-  12% {
+  0%,
+  4%,
+  12%,
+  15%,
+  23% {
     transform: scale(1) translateY(0);
     border-radius: $eye-radius;
   }
 
-  15% {
-    transform: scale(1) translateY(0);
-    border-radius: $eye-radius;
-  }
-
+  7%,
   18% {
     transform: scale(1.5, 0.1) translateY(50px);
     border-radius: 50% 50% 10% 10%;
-  }
-
-  23% {
-    transform: scale(1) translateY(0) translateX(0);
-    border-radius: $eye-radius;
   }
 }
