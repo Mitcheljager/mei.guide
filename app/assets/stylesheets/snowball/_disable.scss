@@ -6,7 +6,8 @@
 }
 
 @keyframes disable {
-  0% {
+  0%,
+  98% {
     transform: scale(1);
   }
 
@@ -20,9 +21,5 @@
 
   95% {
     transform: scale(1, 0.0);
-  }
-
-  98% {
-    transform: scale(1);
   }
 }
