@@ -1,7 +1,7 @@
 module ChapterHelper
   def chapter_block(extra_class: "", id: "", partial: "", &content)
     tag.section class: "mx-auto w-max #{ extra_class }", id: id do
-      tag.div class: "md:w-5/6 lg:w-4/6 mx-auto" do
+      tag.div class: "md:w-10/6 lg:w-4/6 mx-auto" do
         if partial.present?
           render partial
         else
