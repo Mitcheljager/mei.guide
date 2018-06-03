@@ -1,7 +1,27 @@
 <%= stylesheet_link_tag "snowball/snowball", media: "all", "data-turbolinks-track": "reload" %>
-<%= javascript_include_tag "snowball/application", "data-turbolinks-track": "reload" %>
 
 <div class="screen">
   <div class="eye eye--left" data-eye="left"></div>
   <div class="eye eye--right" data-eye="right"></div>
 </div>
+
+<script>
+  const root = document.documentElement;
+  const leftEye = document.querySelector("[data-eye='left']");
+  const rightEye = document.querySelector("[data-eye='right']");
+  var animations = ["blink-move", "blink-static", "smile", "disable"];
+  var currentAnimation = "";
+  var animationDuration = 3000;
+
+  setInterval((function() {
+    if (!document.querySelector("[class*='eye--left eye--']")) {
+      currentAnimation = animations[Math.floor(Math.random() * animations.length)];
+      animationDuration = Math.random() * (2000 - 3000) + 3000;
+    }
+    
+    root.style.setProperty("--animation-duration", animationDuration + "ms");
+    root.style.setProperty("--rng", (Math.random() * (-1.5 - 1.5) + 1.5).toFixed(3));
+    leftEye.classList.toggle("eye--" + currentAnimation);
+    rightEye.classList.toggle("eye--" + currentAnimation);
+  }), animationDuration);
+</script>

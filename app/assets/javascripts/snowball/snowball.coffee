@@ -1,9 +1,6 @@
 prev_handler = window.onload;
 
-window.onload = ->
- if prev_handler
-      prev_handler()
-
+document.addEventListener 'turbolinks:load', ->
   root = document.documentElement;
   leftEye = document.querySelector "[data-eye='left']"
   rightEye = document.querySelector "[data-eye='right']"
