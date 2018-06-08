@@ -1,13 +1,15 @@
 @import "flake/colors-list";
 
+$css-variables: true;
+
 $font-families: (
   serif: "Lora",
   titles: "Spectral SC"
 );
 
 $title-sizes: (
-  h1: 3.1em,
-  h2: 2.25em,
+  h1: 4em,
+  h2: 2.5em,
   h3: 1.75em
 );
 
@@ -15,6 +17,17 @@ $font-sizes: (
   small: .85em,
   normal: 18px,
   large: 1.15em
+);
+
+$spacing: (
+  0: 0,
+  1: .25rem,
+  2: .5rem,
+  3: 1rem,
+  4: 2rem,
+  5: 4rem,
+  10: 8rem,
+  auto: auto
 );
 
 $full-colors: false;

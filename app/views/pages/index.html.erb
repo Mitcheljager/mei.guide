@@ -1,17 +1,17 @@
 <%= chapter_block do %>
-  <h1 class="mt-0 mb-5">Mei<span class="text-primary">.</span>guide</h1>
+  <h1 class="mt-0 mb-10">Mei<%= link_to ".", page_path("snowball"), class: "text-primary b-0" %>guide</h1>
 
   <p class="text-large my-0 font-italic">
     This <strong>Overwatch guide</strong> is aimed at <strong>experienced players</strong> wanting to learn to play as or against Mei. Mei is a very versatile and under utilized hero who can fit nearly any situation. Knowing what to do in each situation <strong>requires hero and map knowledge</strong>. While I try to get this across in this guide, it is something that largely comes from experience. <br>
-    <small>This is written from a PC perspective.</small>
+    <small>This is written with PC in mind, but a lot of it may apply to console as well.</small>
   </p>
 
-  <h2 class="mt-5 mb-3">Table of contents</h2>
+  <h2 class="mt-10 mb-3">Table of contents</h2>
   <%= render "navigation" %>
 <% end %>
 
 <%= chapter_block id: "introduction", partial: "pages/introduction" %>
 <%= render "pages/abilities" %>
-<%= chapter_block id: "general-advise", extra_class: "pt-5", partial: "pages/general_advise" %>
-<%= chapter_block id: "heroes", extra_class: "pt-5", partial: "pages/heroes" %>
+<%= chapter_block id: "general-advise", extra_class: "pt-10", partial: "pages/general_advise" %>
+<%= chapter_block id: "heroes", extra_class: "pt-10", partial: "pages/heroes" %>
 <%= render "pages/map_specific" %>

@@ -1,0 +1,64 @@
+<%= chapter_block extra_class: "mt-10" do %>
+  <h2 class="mt-0 mb-3" id="blizzard">Blizzard</h2>
+
+  <p>
+    Mei's ultimate is often used wrong. It's not supposed to get you those large multi kills. It's easy to get out of by most of the heroes, it doesn't deal a lot of damage, and it's difficult to properly hit multiple targets. What it is great at is area denial. You create this enormous area that the enemy would rather stay away from. This can be great to deny choke points, split enemy teams, and catch people out of position. In a lot of ways it serves a similar role to your wall, except with a deadly twist.
+  </p>
+
+  <p>
+    Let's go over some important points.
+  </p>
+  <ul>
+    <li>After landing it takes 1.5 seconds for the ultimate to activate.</li>
+    <li>Targets are frozen after 1.5 seconds. This can be decreased by additionally hitted the enemy with your Endothermic Blaster.</li>
+    <li>Blizzard lasts 5 seconds. Enemies are frozen as long as they are within the radius. The targets are no longer stunned after 1.5 seconds of leaving the radius, or the ability ending.</li>
+    <li>Blizzard requires line of sight from the center of the ability.</li>
+    <li>While Blizzard is active you do not gain Ultimate charge</li>
+  </ul>
+
+  <p>
+    After throwing your ultimate, when it lands it takes 1.5 seconds for it to activate it's effect. This means that when throwing your ultimate from a distance, it can take a very long time to actually do anything. Thus giving your enemies a ton of time to prepare and react. For this reason, and many others, it's often a good idea to throw your ultimate directly at your feet. Other reasons include; Making sure you are in range to follow up on it properly, and making sure your ultimate does not get reflected or Defense Matrixed.<br>
+    <em>Unfortunately due to buggy detection, it can take more than 1.5 seconds for it to activate. It can get stuck on some object and you will have to wait for it to reposition itself. This can sometimes take several seconds. Because of this I often make sure to throw it on a flat surface to make sure it activates right away.</em>
+  </p>
+
+  <p>
+    Many heroes have one or more abilities that allow them to get out of your ultimate. This makes it very difficult to catch someone. When using your ultimate it can be a good idea to look for a spot with not many exits. Especially when closing one of those exits with your Ice Wall. This will of course not always be ideal. Sometimes you will have to use your ultimate in a big open space. This can be for a number of reasons; Forcing people away from an objective, splitting enemy teams, and trying to kill a single target. In all of these situations it can be a good idea to force on one specific enemy, to make sure you atleast get a kill. But even if you don't, the area control it gives can easily win you the fight. It forces enemies to use their movement abilities, which can make them vulnerable. This is similar to what a D.va Self-destruct is often used for.
+  </p>
+<% end %>
+
+<%= columns_block do %>
+  <div class="block px-4 md:px-0 md:mx-4 w-1/1 md:w-6/12 lg:w-10/12 mw:w-4/12 mt-4 sm:mt-0">
+    <%= link_to image_url("blizzard_hitbox_1.jpg"), target: "_blank", class: "b-0" do %>
+      <%= image_tag "blizzard_hitbox_1.jpg", class: "block mb-3 h-auto w-1/1" %>
+    <% end %>
+
+    <%= link_to image_url("blizzard_hitbox_2.jpg"), target: "_blank", class: "b-0" do %>
+      <%= image_tag "blizzard_hitbox_2.jpg", class: "block h-auto w-1/1" %>
+    <% end %>
+  </div>
+
+  <div class="px-4 md:px-0 md:mx-4 md:w-6/12 lg:w-10/12 mw:w-4/12">
+    <p>
+      What makes the ability so strange and difficult to use is it's very unclear visuals. The visuals show a large circle, indicating that anything in it's circle will be affected. In practice this is a little different. Only areas in line of sight of the center of Blizzard are affected. Meaning that anyone behind cover or walls will not be frozen. In the image you can see it in action. <strong>Any of the red areas are unaffected</strong>, even though the visuals are absolutely covering the area. This also goes for vertical line of sight. So if the enemy would be behind a wall, but his head pokes out above it, he will still be affected. In other words, as long as any part of the hero is within a green zone, he will be affected. This also goes for the very edge of the ultimate. <strong>The payload, shields, and breakable objects do not block line of sight of Blizzard</strong>.
+    </p>
+
+    <p>
+      Unfortunately this can often lead to unexpected escapes from enemies. Things like small lanerns, or other objects, can block line of sight and set enemies free. This can be very frustrating, but it's something we will have to deal with.
+    </p>
+
+    <p>
+      The area that Blizzard covers is spherical. Because of this is it very difficult to hit targets in the air, as they are more likely to be ouside the area.
+    </p>
+
+    <label class="content-toggle" data-toggle-content>
+      Toggle example
+
+      <input type="checkbox" class="content-toggle__input">
+      <div class="content-toggle__inner">
+        <%= link_to image_url("blizzard_radius.jpg"), target: "_blank", class: "b-0" do %>
+          <%= image_tag "blizzard_radius.jpg", class: "h-auto w-1/1" %>
+        <% end %>
+      </div>
+    </label>
+  </div>
+<% end %>
