@@ -35,9 +35,9 @@ $theme-colors: (
   primary: #87d7f6,
   secondary: darken(#87d7f6, 20%),
   light: #f0edf2,
-  dark: map-get(map-get($colors-list, gray), 700),
-  white: #fff,
-  black: #000
+  dark: map-get(map-get($colors-list, gray), 500),
+  white: map-get(map-get($colors-list, gray), 300),
+  black: map-get(map-get($colors-list, gray), 900)
 );
 
 $important: false;
