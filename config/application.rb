@@ -1,10 +1,15 @@
 require_relative 'boot'
 
+require "rails"
+# Pick the frameworks you want:
+require "active_model/railtie"
+require "active_job/railtie"
+# require "active_record/railtie"
+# require "active_storage/engine"
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_view/railtie"
-require "active_job/railtie" # Only for Rails >= 4.2
-require "action_cable/engine" # Only for Rails >= 5.0
+require "action_cable/engine"
 require "sprockets/railtie"
 require "rails/test_unit/railtie"
 
@@ -18,11 +23,8 @@ module MeiGuide
     config.load_defaults 5.1
 
     # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
-
-    config.middleware.delete ActionDispatch::Cookies
-    config.middleware.delete ActionDispatch::Session::CookieStore
-    config.middleware.delete ActionDispatch::Flash
+    # Application configuration can go into files in config/initializers
+    # -- all .rb files in that directory are automatically loaded after loading
+    # the framework and any gems in your application.
   end
 end
